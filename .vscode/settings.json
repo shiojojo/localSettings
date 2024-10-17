@@ -1,5 +1,9 @@
 {
+  "extensions.ignoreRecommendations": false,
   "editor.formatOnSave": true,
+  "css.enabledLanguages": ["html", "php"],
+  "css.autoValidation": "Always",
+  "css.styleSheets": ["**/*.css", "**/*.scss"],
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
@@ -10,7 +14,7 @@
     "editor.formatOnSave": true,
     "editor.tabSize": 2
   },
-  "[json]": {
+  "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "editor.tabSize": 2
@@ -21,18 +25,13 @@
     "editor.tabSize": 2
   },
   "intelephense.format.braces": "k&r",
-  // word press 
-  "intelephense.environment.includePaths": ["../../plugins/"], 
-  "intelephense.stubs": [
-    "Core",
-    "standard",
-    "date",
-    "wordpress",
-  ],
+  // word press
+  "intelephense.environment.includePaths": ["**/plugins/"],
+  "intelephense.stubs": ["Core", "standard", "date", "wordpress"],
   "[perl]": {
     "editor.formatOnSave": true,
     "editor.tabSize": 2
   },
   "perlnavigator.perlimportsLintEnabled": true,
-  "perlnavigator.perlimportsTidyEnabled": true,
+  "perlnavigator.perlimportsTidyEnabled": true
 }

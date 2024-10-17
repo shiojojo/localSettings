@@ -4,6 +4,7 @@
     "esbenp.prettier-vscode",
     "bmewburn.vscode-intelephense-client",
     "streetsidesoftware.code-spell-checker",
-    "ics.japanese-proofreading"
+    "ics.japanese-proofreading",
+    "ecmel.vscode-html-css"
   ]
 }
