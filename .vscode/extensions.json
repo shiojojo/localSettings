@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "bscan.perlnavigator",
+    "esbenp.prettier-vscode",
+    "bmewburn.vscode-intelephense-client",
+    "streetsidesoftware.code-spell-checker",
+    "ics.japanese-proofreading"
+  ]
+}
