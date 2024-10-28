@@ -1,9 +1,10 @@
 {
   "extensions.ignoreRecommendations": false,
+  "emmet.triggerExpansionOnTab": true,
   "editor.formatOnSave": true,
   "css.enabledLanguages": ["html", "php"],
   "css.autoValidation": "Always",
-  "css.styleSheets": ["**/*.css", "**/*.scss"],
+  "css.styleSheets": ["**/*.{css,scss}"],
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
