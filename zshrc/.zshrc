@@ -33,18 +33,20 @@ if [ -f ~/.zsh/git-prompt.sh ]; then
     GIT_PS1_SHOWUPSTREAM=auto
 fi
 setopt PROMPT_SUBST
-function git_color() {
-  local git_info="$(__git_ps1 "%s")"
-  if [[ $git_info == *"%"* ]] || [[ $git_info == *"*"* ]]; then
-    echo '%F{red}'
-  elif [[ $git_info == *"+"* ]] || [[ $git_info == *">"* ]]; then
-    echo '%F{yellow}'
-  else
-    echo '%F{green}'
-  fi
-}
+# 動作が遅いので削除
+# function git_color() {
+#   local git_info="$(__git_ps1 "%s")"
+#   if [[ $git_info == *"%"* ]] || [[ $git_info == *"*"* ]]; then
+#     echo '%F{red}'
+#   elif [[ $git_info == *"+"* ]] || [[ $git_info == *">"* ]]; then
+#     echo '%F{yellow}'
+#   else
+#     echo '%F{green}'
+#   fi
+# }
 PROMPT_NEW_LINE=$'\n'
-PS1='%F{blue}%n%f %F{green}%~$(git_color)$(__git_ps1 "\n(%s)")${PROMPT_NEW_LINE}%f$ '
+# PS1='%F{blue}%n%f %F{green}%~$(git_color)$(__git_ps1 "\n(%s)")${PROMPT_NEW_LINE}%f$ '
+PS1='%F{blue}%n%f %F{green}%~%F{yellow}$(__git_ps1 "\n(%s)")${PROMPT_NEW_LINE}%f$ '
 # ls change color
 export LSCOLORS=cxfxcxdxbxegedabagacad
 alias ls="ls -G" 
