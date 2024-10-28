@@ -14,7 +14,14 @@ setopt hist_ignore_all_dups
 # 開始と終了を記録
 setopt EXTENDED_HISTORY
 ############### shell ##################
-if [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
+# git-completion
+if [ -f ~/.zsh/git-completion.bash ]; then
+    fpath=(~/.zsh $fpath)
+    zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
+    autoload -Uz compinit && compinit
+fi
+# git-prompt.sh 
+if [ -f ~/.zsh/git-prompt.sh ]; then
     source /usr/local/etc/bash_completion.d/git-prompt.sh
     # addされていない変更を「*」commitされていない変更を「+」で示す
     GIT_PS1_SHOWDIRTYSTATE=true
@@ -38,7 +45,7 @@ function git_color() {
 }
 PROMPT_NEW_LINE=$'\n'
 PS1='%F{blue}%n%f %F{green}%~$(git_color)$(__git_ps1 "\n(%s)")${PROMPT_NEW_LINE}%f$ '
-# ディレクトリの色変更
+# ls change color
 export LSCOLORS=cxfxcxdxbxegedabagacad
 alias ls="ls -G" 
 ############### openjdk ################
