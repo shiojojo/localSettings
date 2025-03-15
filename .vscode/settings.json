@@ -15,7 +15,9 @@
     "editor.formatOnSave": true,
     "editor.tabSize": 2
   },
-  "[jsonc]": {
+  "prettier.singleQuote": true,
+  "prettier.arrowParens": "avoid",
+  "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "editor.tabSize": 2
@@ -34,5 +36,14 @@
     "editor.tabSize": 2
   },
   "perlnavigator.perlimportsLintEnabled": true,
-  "perlnavigator.perlimportsTidyEnabled": true
+  "perlnavigator.perlimportsTidyEnabled": true,
+  "editor.wordWrap": "on",
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "yaml.schemas": {
+    "kubernetes": ["*.yml", "*.yaml"],
+  "accessibility.voice.speechTimeout": 3600,
 }
