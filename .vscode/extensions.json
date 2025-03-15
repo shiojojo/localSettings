@@ -4,7 +4,9 @@
     "esbenp.prettier-vscode",
     "bmewburn.vscode-intelephense-client",
     "streetsidesoftware.code-spell-checker",
-    "ics.japanese-proofreading",
-    "ecmel.vscode-html-css"
+    "ecmel.vscode-html-css",
+    "redhat.vscode-yaml",
+    "dbaeumer.vscode-eslint",
+    "github.copilot"
   ]
 }
