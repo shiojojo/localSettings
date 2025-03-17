@@ -2,6 +2,7 @@
   "extensions.ignoreRecommendations": false,
   "emmet.triggerExpansionOnTab": true,
   "editor.formatOnSave": true,
+  "editor.tabSize": 2,
   "css.enabledLanguages": ["html", "php"],
   "css.autoValidation": "Always",
   "css.styleSheets": ["**/*.{css,scss}"],
@@ -44,6 +45,11 @@
     "editor.tabSize": 2
   },
   "yaml.schemas": {
-    "kubernetes": ["*.yml", "*.yaml"],
+    "kubernetes": ["*.yml", "*.yaml"]
+  },
   "accessibility.voice.speechTimeout": 3600,
+  "workbench.editor.wrapTabs": true,
+  "workbench.editor.tabSizing": "fixed",
+  "workbench.editor.focusRecentEditorAfterClose": false,
+  "workbench.editor.sortTabsBy": "type"
 }
