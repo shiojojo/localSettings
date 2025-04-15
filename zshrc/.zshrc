@@ -22,7 +22,7 @@ if [ -f ~/.zsh/git-completion.bash ]; then
 fi
 # git-prompt.sh 
 if [ -f ~/.zsh/git-prompt.sh ]; then
-    source /usr/local/etc/bash_completion.d/git-prompt.sh
+    source ~/.zsh/git-prompt.sh
     # addされていない変更を「*」commitされていない変更を「+」で示す
     GIT_PS1_SHOWDIRTYSTATE=true
     # addされていない新規ファイルの存在を「%」で示す
