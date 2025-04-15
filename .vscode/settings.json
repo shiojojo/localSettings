@@ -1,55 +1,69 @@
 {
+  // Show extension recommendations.
   "extensions.ignoreRecommendations": false,
+  // Enable Emmet expansion when pressing Tab.
   "emmet.triggerExpansionOnTab": true,
+  // Format files automatically on save.
   "editor.formatOnSave": true,
+  // Set the editor tab size to 2 spaces.
   "editor.tabSize": 2,
+  // Enable CSS features in HTML and PHP files.
   "css.enabledLanguages": ["html", "php"],
+  // Always validate the CSS.
   "css.autoValidation": "Always",
+  // Apply these stylesheets to files matching the pattern.
   "css.styleSheets": ["**/*.{css,scss}"],
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
-    "editor.tabSize": 2
+    // Use Prettier to format HTML files.
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
-    "editor.tabSize": 2
+    // Use Prettier to format JavaScript files.
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  // Use single quotes in Prettier.
   "prettier.singleQuote": true,
+  // Use 'avoid' style for arrow function parentheses in Prettier.
   "prettier.arrowParens": "avoid",
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
-    "editor.tabSize": 2
+    // Use Prettier to format JSON files.
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[php]": {
-    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
-    "editor.formatOnSave": true,
-    "editor.tabSize": 2
+    // Use Intelephense for formatting PHP files.
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
   },
+  // Use K&R style braces for Intelephense.
   "intelephense.format.braces": "k&r",
-  // word press
+  // WordPress: include plugin paths.
   "intelephense.environment.includePaths": ["**/plugins/"],
+  // Load WordPress-related stubs.
   "intelephense.stubs": ["Core", "standard", "date", "wordpress"],
   "[perl]": {
-    "editor.formatOnSave": true,
-    "editor.tabSize": 2
   },
+  // Enable linting for Perl imports.
   "perlnavigator.perlimportsLintEnabled": true,
+  // Enable tidy mode for Perl imports.
   "perlnavigator.perlimportsTidyEnabled": true,
+  // Enable word wrap in the editor.
   "editor.wordWrap": "on",
   "[yaml]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml",
-    "editor.formatOnSave": true,
-    "editor.tabSize": 2
+    // Use Red Hat's YAML formatter.
+    "editor.defaultFormatter": "redhat.vscode-yaml"
   },
+  // Associate YAML files with Kubernetes schema.
   "yaml.schemas": {
     "kubernetes": ["*.yml", "*.yaml"]
   },
+  // Increase voice accessibility speech timeout.
   "accessibility.voice.speechTimeout": 3600,
+  // Wrap tabs in the editor.
   "workbench.editor.wrapTabs": true,
+  // Use fixed tab sizing in the editor.
   "workbench.editor.tabSizing": "fixed",
+  // Do not focus the most recent editor after closing.
   "workbench.editor.focusRecentEditorAfterClose": false,
-  "workbench.editor.sortTabsBy": "type"
+  "github.copilot.chat.agent.thinkingTool": true,
+  "github.copilot.chat.codesearch.enabled": true,
+  "terminal.integrated.copyOnSelection": true
 }
