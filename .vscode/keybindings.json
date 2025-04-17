@@ -40,6 +40,10 @@
         "command": "explorer.newFile"
     },
     {
+        "key": "alt+n",
+        "command": "workbench.action.files.newUntitledFile"
+    },
+    {
         "key": "cmd+shift+n",
         "command": "explorer.newFolder"
     }
